@@ -1,0 +1,18 @@
+{
+    "name": "선바 팬카페 가입 신청 조건 검사",
+    "description": "선바 팬카페의 가입 신청 조건을 충족하지 못 할 경우, 노란색으로 강조하고 해당 체크박스를 체크해둡니다. (F12 → console log에 거절 사유 기재)",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+          "matches": ["https://cafe.naver.com/ManageJoinApplication.nhn?search.clubid=30555446*"],
+          "js": ["content.js"]
+        }
+      ],    
+    "icons": {
+        "16": "/images/sunba_16.png",
+        "32": "/images/sunba_32.png",
+        "48": "/images/sunba_48.png",
+        "128": "/images/sunba_128.png"    
+    }
+}
